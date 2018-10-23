@@ -11,8 +11,7 @@ public class Ejercicios {
 
 
 	// --------------- 04/10/2018 ACTIVIDAD: BUSCAR EN LA API
-	// ------------------------------- control  prueba
-
+	// ------------------------------- control de versiones
 	public void pruebasAPI() {
 		/*
 		 * 1. imprime por consola el valor de 2^3 - Usa la clase estática Math y
