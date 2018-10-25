@@ -154,10 +154,19 @@ public class Ejercicios {
 
 		System.out.println("el menor es : " + ejercicios.calNumMenor(a, b, c, d));
 		
+		float[] movs = {10.0f, -5.0f, 20.5f, -10.5f};
+		float saldoI = 100.0f;
+		System.out.println("Saldo Final:" + ejercicios.saldoBanco(saldoI, movs));
+		
+		ejercicios.pruebaCadenas();
+		
+		//String[] diasSemana = {"LUNES","MARTES"};
+		//ejercicios.saldoBanco(10.0f, -5.0f, 20.0f, -10.5f);
+		
 		//ejercicios.imprimeAleatorio(5);
 		//ejercicios.generaListaAleatorios(10, 100, 500);
 		//int[] ListAleatorios = ejercicios.generaListaAleatorio(20, 1, 5000);
-		 int[] estadisticasDatos = ejercicios.generaEstadisticaAparicion(101, 1, 2);
+		// int[] estadisticasDatos = ejercicios.generaEstadisticaAparicion(101, 1, 2);
 		//ejercicios.calNumMenor(a, b, c, d);
 
 		// factorial(5);
@@ -189,6 +198,11 @@ public class Ejercicios {
 	//Imprime por consola n número aleatorios
 	// entre 1-100
 	
+	private void saldoBanco(float f, float g, float h, float i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public void imprimeAleatorio(int n) //n, cuantos números
 	{
 		rnd = new Random();
@@ -248,7 +262,36 @@ public class Ejercicios {
 			
 		
 		return estadistica;
-
-
 }	
-}
+		
+		public float saldoBanco(float saldoInicial, float[] movimientos) {
+			
+			float saldoFinal = saldoInicial;
+			// Recorrer el array de movimientos 
+				// sumando dichas cantidades a saldo Final
+			
+			for (int i = 0; i < movimientos.length; i++)
+				saldoFinal += movimientos[i];
+			return saldoFinal;	
+		}
+	
+		public void pruebaCadenas() {
+			
+			String nombre = "LAS PALMAS DE GRAN CANARIA";
+			String nombre2 = "LAS PALMAS DE GRAN CANARIA";
+			//iterar en la cadena mostrando todos sus caracteres
+
+			//for (int i = 0; i < nombre.length(); i++) {
+				//System.out.println(nombre.charAt(i));
+			//for (int j = 0; j < nombre2.length(); j++) {
+				System.out.println(nombre2.compareTo(nombre));
+			}
+				
+			
+			
+			}
+			
+		
+
+		
+
