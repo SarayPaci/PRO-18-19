@@ -287,7 +287,7 @@ public class Ejercicios {
 				System.out.println(nombre2.compareTo(nombre));
 			}
 				
-			
+			//prueba
 			
 			}
 			
